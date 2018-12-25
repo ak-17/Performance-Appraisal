@@ -1,4 +1,4 @@
-package com.akshay.performanceappraisal;
+package com.akshay.performance.appraisal;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
