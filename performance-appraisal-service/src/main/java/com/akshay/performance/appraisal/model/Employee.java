@@ -12,7 +12,7 @@ public class Employee {
 		MALE, FEMALE, OTHER
 	};
 
-	private Integer id;
+	private Integer empId;
 	private String firstName;
 	private String lastName;
 	private GENDER gender;
@@ -20,6 +20,20 @@ public class Employee {
 	//todo: get better type for phoneNumber
 	private String phoneNumber;
 	private String address;
+
+	/**
+	 * @return the empId
+	 */
+	public Integer getEmpId() {
+		return empId;
+	}
+
+	/**
+	 * @param empId the empId to set
+	 */
+	public void setEmpId(Integer empId) {
+		this.empId = empId;
+	}
 
 	/**
 	 * @return the gender
@@ -33,20 +47,6 @@ public class Employee {
 	 */
 	public void setGender(GENDER gender) {
 		this.gender = gender;
-	}
-
-	/**
-	 * @return the id
-	 */
-	public Integer getId() {
-		return id;
-	}
-
-	/**
-	 * @param id the id to set
-	 */
-	public void setId(Integer id) {
-		this.id = id;
 	}
 
 	/**
