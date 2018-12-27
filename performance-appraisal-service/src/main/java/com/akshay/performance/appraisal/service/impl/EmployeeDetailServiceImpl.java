@@ -8,8 +8,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.akshay.performance.appraisal.dao.EmployeeDetailDao;
 import com.akshay.performance.appraisal.model.Employee;
+import com.akshay.performance.appraisal.repository.EmployeeDetailDao;
 import com.akshay.performance.appraisal.service.EmployeeDetailService;
 
 /**

@@ -1,0 +1,22 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<!DOCTYPE mapper
+     PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+     
+<mapper namespace="com.akshay.performance.appraisal.repository.EmployeeDetailDao">
+    
+    <resultMap type="com.akshay.performance.appraisal.model.Employee" id="employeeMap">
+        <result property = "id" column = "EMP_ID"/>
+        <result property = "firstName" column = "FIRST_NAME"/>
+        <result property = "lastName" column = "FIRST_NAME"/>
+        <result property = "gender" column = "GENDER"/>
+        <result property = "emailId" column = "EMAIL_ID"/>
+        <result property = "phoneNumber" column = "PHONE_NUMBER"/>
+        <result property = "address" column = "ADDRESS"/>
+    </resultMap>
+    
+    <select id="getAllEmployees" resultMap="employeeMap">
+        SELECT * FROM PA_EMPLOYEE
+    </select>
+</mapper>

@@ -12,7 +12,7 @@ public class Employee {
 		MALE, FEMALE, OTHER
 	};
 
-	private Integer empId;
+	private Integer id;
 	private String firstName;
 	private String lastName;
 	private GENDER gender;
@@ -21,18 +21,19 @@ public class Employee {
 	private String phoneNumber;
 	private String address;
 
+
 	/**
-	 * @return the empId
+	 * @return the id
 	 */
-	public Integer getEmpId() {
-		return empId;
+	public Integer getId() {
+		return id;
 	}
 
 	/**
-	 * @param empId the empId to set
+	 * @param id the id to set
 	 */
-	public void setEmpId(Integer empId) {
-		this.empId = empId;
+	public void setId(Integer id) {
+		this.id = id;
 	}
 
 	/**
