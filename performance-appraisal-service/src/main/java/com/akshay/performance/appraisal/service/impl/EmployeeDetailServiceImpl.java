@@ -27,4 +27,10 @@ public class EmployeeDetailServiceImpl implements EmployeeDetailService{
 		return employeeDetailDao.getAllEmployees();
 	}
 
+
+	@Override
+	public Employee getEmployeeById(Integer id) {
+		return employeeDetailDao.getEmployeeById(id);
+	}
+
 }

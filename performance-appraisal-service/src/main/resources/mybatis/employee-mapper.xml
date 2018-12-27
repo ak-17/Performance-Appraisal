@@ -9,7 +9,7 @@
     <resultMap type="com.akshay.performance.appraisal.model.Employee" id="employeeMap">
         <result property = "id" column = "EMP_ID"/>
         <result property = "firstName" column = "FIRST_NAME"/>
-        <result property = "lastName" column = "FIRST_NAME"/>
+        <result property = "lastName" column = "LAST_NAME"/>
         <result property = "gender" column = "GENDER"/>
         <result property = "emailId" column = "EMAIL_ID"/>
         <result property = "phoneNumber" column = "PHONE_NUMBER"/>
@@ -18,5 +18,9 @@
     
     <select id="getAllEmployees" resultMap="employeeMap">
         SELECT * FROM PA_EMPLOYEE
+    </select>
+    
+    <select id="getEmployeeById" parameterType="int" resultMap = "employeeMap">
+        SELECT * FROM PA_EMPLOYEE WHERE EMP_ID = #{id}
     </select>
 </mapper>

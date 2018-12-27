@@ -17,10 +17,9 @@ public class Employee {
 	private String lastName;
 	private GENDER gender;
 	private String emailId;
-	//todo: get better type for phoneNumber
+	// todo: get better type for phoneNumber
 	private String phoneNumber;
 	private String address;
-
 
 	/**
 	 * @return the id
@@ -119,5 +118,5 @@ public class Employee {
 	public void setAddress(String address) {
 		this.address = address;
 	}
-	
+
 }

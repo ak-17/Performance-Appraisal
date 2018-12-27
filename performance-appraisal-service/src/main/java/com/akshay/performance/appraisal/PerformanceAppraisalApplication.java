@@ -4,8 +4,13 @@ import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+/**
+ * 
+ * @author akshay
+ *
+ */
 @SpringBootApplication
-@MapperScan({"com.akshay.performance.appraisal.repository"})
+@MapperScan({ "com.akshay.performance.appraisal.repository" })
 public class PerformanceAppraisalApplication {
 
 	public static void main(String[] args) {
@@ -13,4 +18,3 @@ public class PerformanceAppraisalApplication {
 	}
 
 }
-

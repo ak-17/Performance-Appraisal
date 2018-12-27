@@ -19,4 +19,5 @@ import com.akshay.performance.appraisal.model.Employee;
 public interface EmployeeDetailService {
 	
 	List<Employee> getAllEmployees();
+	Employee getEmployeeById(Integer id);
 }
