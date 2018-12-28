@@ -6,7 +6,7 @@ import java.util.Date;
  * @author akshay
  *
  */
-public class Leave {
+public class LeaveApply {
 
 	private enum LEAVETYPE {
 		SICK_LEAVE, PUBLIC_HOLIDAY, ANNUAL_LEAVE, PARENTAL
@@ -15,6 +15,21 @@ public class Leave {
 	private LEAVETYPE leaveType;
 	private Date startDate;
 	private Date endDate;
+	private String reason;
+
+	/**
+	 * @return the reason
+	 */
+	public String getReason() {
+		return reason;
+	}
+
+	/**
+	 * @param reason the reason to set
+	 */
+	public void setReason(String reason) {
+		this.reason = reason;
+	}
 
 	/**
 	 * @return the leaveType

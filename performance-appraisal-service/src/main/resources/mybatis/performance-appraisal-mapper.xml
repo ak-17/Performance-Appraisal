@@ -4,7 +4,7 @@
      PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
      "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
      
-<mapper namespace="com.akshay.performance.appraisal.repository.EmployeeDetailDao">
+<mapper namespace="com.akshay.performance.appraisal.repository.PerformanceAppraisalDao">
     
     <resultMap type="com.akshay.performance.appraisal.model.Employee" id="employeeMap">
         <result property = "id" column = "EMP_ID"/>
@@ -16,6 +16,13 @@
         <result property = "address" column = "ADDRESS"/>
     </resultMap>
     
+    <resultMap type="com.akshay.performance.appraisal.model.LeaveSummary" id="leaveSummaryMap">
+        <result property = "empId" column = "EMP_ID"/>
+        <result property = "sickLeave" column = "SICK_LEAVE"/>
+        <result property = "casualLeave" column = "CASUAL_LEAVE"/>
+        <result property = "publicHoliday" column = "PUBLIC_HOLIDAY"/>
+    </resultMap>
+    
     <select id="getAllEmployees" resultMap="employeeMap">
         SELECT * FROM PA_EMPLOYEE
     </select>
@@ -23,4 +30,9 @@
     <select id="getEmployeeById" parameterType="int" resultMap = "employeeMap">
         SELECT * FROM PA_EMPLOYEE WHERE EMP_ID = #{id}
     </select>
+    
+    <select id="getLeaveSummaryByEmployeeId" parameterType="int" resultMap="leaveSummaryMap">
+        SELECT * FROM PA_LEAVE_SUMMARY WHERE EMP_ID = #{id}
+    </select>
+    
 </mapper>
