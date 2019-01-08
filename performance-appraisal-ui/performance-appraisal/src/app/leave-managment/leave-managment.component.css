@@ -1,0 +1,61 @@
+.header {
+    background: #FFFFFF;
+    height: 280px;
+    display: table;
+    width: 100%;
+}
+
+.header-line {
+    background-color: #3498db;
+    width: 40px;
+    height: 12px;
+    margin-top: 140px;
+}
+
+.header h1 {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 42px;
+    padding: 16px;
+}
+
+img {
+    float: right;
+    width: 200px;
+    padding: 20px;
+}
+
+.top-nav {
+    background-color: #FFFFFF;
+    overflow: hidden;
+}
+
+.top-nav li {
+    display: inline-block;
+}
+
+.top-nav li a {
+    display: block;
+    padding: 20px;
+    color: #777F92;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.top-nav a.active {
+    font-weight: 700;
+    border-bottom: 3px solid #3498db;
+}
+
+.top-nav a:hover:not(.active){
+    border-bottom: 3px solid #3498db;
+}
+
+.content {
+    display: flex;
+}
+
+.leave-card {
+    width: 31%;
+    margin: 20px;
+}
